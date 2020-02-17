@@ -6,10 +6,6 @@ from .models import Item, List
 
 
 # Create your tests here.
-# class SmokeTest(TestCase):
-#     def test_bad_maths(self):
-#         self.assertEqual(1 + 1, 3)
-
 class HomePageTest(TestCase):
     def test_users_home_template(self):
         response = self.client.get('/')
