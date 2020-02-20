@@ -1,0 +1,14 @@
+[Unit]
+Description=Gunicorn server for superlists staging
+
+[Service]
+Restart=on-failure
+User=vagrant
+WorkingDirectory=/home/vagrant/sites/superlits-staging.example.org/source
+ExecStart = /home/vagrant/sites/superlits-staging.example.org/virtualenv/bin/gunicorn\
+             --bind unix:/tmp/superlists-stageing.socket\
+             superlists.wsgi:application
+
+
+[Install]
+WantedBy=multi-user.target
