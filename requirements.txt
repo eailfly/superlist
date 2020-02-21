@@ -14,6 +14,7 @@ django==3.0.3             # via -r requirements.in (line 2)
 entrypoints==0.3          # via flake8
 fabric==2.5.0             # via -r requirements.in (line 4), patchwork
 flake8==3.7.9             # via -r requirements.in (line 3)
+gunicorn==20.0.4          # via -r requirements.in (line 6)
 invoke==1.4.1             # via fabric
 mccabe==0.6.1             # via flake8
 paramiko==2.7.1           # via fabric
@@ -27,3 +28,6 @@ selenium==3.141.0         # via -r requirements.in (line 1)
 six==1.14.0               # via bcrypt, cryptography, pynacl
 sqlparse==0.3.0           # via django
 urllib3==1.25.8           # via selenium
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools
