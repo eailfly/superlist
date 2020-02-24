@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+
 from .base import FunctionalTest
 
 
@@ -87,4 +88,3 @@ class NewVisitorTest(FunctionalTest):
         self.assertNotIn('make a fly', page_text)
 
         # Satisfied, they both go back to sleep
-
