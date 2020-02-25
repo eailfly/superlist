@@ -32,7 +32,8 @@ class FunctionalTest(StaticLiveServerTestCase):
                     raise e
                 time.sleep(0.5)
 
-    def wait_for(self, fn):
+    @staticmethod
+    def wait_for(fn):
         start_time = time.time()
         while True:
             try:
